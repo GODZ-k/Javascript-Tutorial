@@ -10,5 +10,5 @@
 ### String Comprihension 
 - Use to add strings
 
-  ## Calculator.html
-  - Bulid a Calculator
+## Calculator.html
+- Bulid a Calculator
