@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h">
+
+    </h1>
+    <button onclick="getdate()">
+    date</button>
+    <script>
+        var b = new Date()
+
+
+        function getdate() {
+            // var a = document.getElementById('h').innerHTML = Date() // or b
+            // var a = document.getElementById('h').innerHTML = b.getFullYear()
+            // var a = document.getElementById('h').innerHTML = b.getMonth()
+            // var a = document.getElementById('h').innerHTML = b.getDate()
+            // var a = document.getElementById('h').innerHTML = b.getHours()
+            // var a = document.getElementById('h').innerHTML = b.getMinutes()
+            // var a = document.getElementById('h').innerHTML = b.getMilliseconds()
+            // var a = document.getElementById('h').innerHTML = b.getSeconds()
+            // var a = document.getElementById('h').innerHTML = b.getTime()
+            var y = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+            var a = document.getElementById('h').innerHTML = y[b.getDay()]
+
+
+        }
+    </script>
+</body>
+
+</html>

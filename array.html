@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hello"></h1>
+    <button onclick="pop()">
+    pop</button>
+    <button onclick="push()">
+    push</button>
+    <button onclick="slice()">
+    slice</button>
+    <button onclick="reverse() ">
+    reverse</button>
+    <button onclick="shift() ">
+    shift</button>
+    <script>
+        // isArray function
+        // function call() {
+        var a = ['hello', 'tanmay', 'how', 'are', 'you']
+        var b = ['mango', 'banana', 'new', 'graps', 'apple']
+
+        //     var d = Array.isArray(a)
+        //     alert(Array.isArray(a))
+        //     document.getElementById('hello').innerHTML = d
+        //     document.write(d)
+        //     console.log(b)
+        // }
+
+        // valueOf function
+        // function call() {
+        //     var c = a.valueOf();
+        //     var b = document.getElementById('hello').innerHTML = c
+        // }
+
+        // join function
+        // function call() {
+        //     var c = a.join(" | ") use for formating the array
+        //     var d = document.getElementById('hello').innerHTML = c
+        //}
+
+
+        // concat function : use for bind the arrays (one array to another array )
+        // function call() {
+        //     var c = a.concat(b)
+        //     var d = c.join("| ")
+        //     document.getElementById('hello').innerHTML = d
+
+        // }
+
+        // indaxOf function : use for show the indexing for the perticular item
+        // function call() {
+        //     var c = a.indexOf("tanmay ")
+        //     document.getElementById('hello').innerHTML = c
+        //     alert(a.indexOf('tanmay'))
+        // }
+
+
+        document.getElementById('hello').innerHTML = a
+            // pop function : use to delete the last element of the array
+        function pop() {
+            a.pop()
+            document.getElementById('hello').innerHTML = a
+
+        }
+
+        // push function : use for the add the new elemend at the end of the array
+        function push() {
+            var d = prompt('enter the name', " ")
+            a.push(d)
+            document.getElementById('hello').innerHTML = a
+
+
+        }
+        //   slice function : use for remove the perticular element of the array
+        function slice() {
+            // var x = a.slice(1, 3)
+            var x = a.slice(1)
+            document.getElementById('hello').innerHTML = x
+
+        }
+
+        // reverse function
+        function reverse() {
+            a.reverse()
+            document.getElementById('hello').innerHTML = a
+        }
+
+        // shift function : use for delete the starting elements of the array
+        function shift() {
+            var y = a.shift()
+            document.getElementById('hello').innerHTML = a
+
+        }
+    </script>
+
+</body>
+
+</html>

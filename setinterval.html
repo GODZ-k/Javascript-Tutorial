@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="get()">
+    Get</button>
+    <h1></h1>
+    <script>
+        // set interval
+        // function get() {
+        //     setInterval(function() {
+        //         alert('hello')
+        //     }, 1000)
+        // }
+
+        // set timeout
+        function get() {
+            setTimeout(() => {
+                alert('hello world')
+                document.getElementsByTagName('h1')[0].innerHTML = '<h1> hello </h1>'
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

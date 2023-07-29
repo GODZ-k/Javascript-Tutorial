@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- name:
+    <i id="result">
+
+</i>
+    <br>
+    <button onclick="call()">
+    call</button> -->
+    <label for="">Enter your age </label>
+    <input type="number" id="no">
+    <br>
+    <button onclick="call()">
+    call</button>
+    <script>
+        // document.write(prompt('enter your age '))
+        // var result = prompt("enter your name ", " ")
+        // document.write(result)
+        // function call() {
+        //     var inp = prompt("Enter your age ", "")
+        //     var result = document.getElementById("result").innerHTML = inp
+        //     console.log(result)
+
+        // }
+        function call() {
+            var no = document.getElementById("no").value
+            if (no >= 18) {
+                alert("Welcome sir")
+                setTimeout(function run() {
+                    confirm("Do you wanna coffee")
+                }, 2000)
+            } else {
+                alert("Get out you fucking NOOB")
+            }
+        }
+    </script>
+</body>
+
+</html>

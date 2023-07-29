@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            justify-content: center;
+            align-items: center;
+            color: red;
+            margin-top: 50%;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body onload="load()">
+    <h1>
+
+    </h1>
+    <script>
+        function load() {
+            var a = new Date()
+            var b = a.getHours()
+            var c = a.getMinutes()
+            var d = a.getSeconds()
+            var sec = "AM"
+            if (b >= 13) {
+                b = b - 12
+            }
+            if (b >= 13) {
+                sec = "PM"
+            } else {
+                sec = "AM"
+            }
+            if (d < 10) {
+                d = "0" + d
+            }
+            if (c < 10) {
+                c = "0" + c
+            }
+            if (b < 10) {
+                b = "0" + b
+
+            } else {
+                d = d
+            }
+            setInterval(function() {
+
+                load()
+            }, 1000)
+
+            document.getElementsByTagName('h1')[0].innerHTML = b + " : " + c + " : " + d + " : " + sec
+        }
+    </script>
+</body>
+
+</html>
