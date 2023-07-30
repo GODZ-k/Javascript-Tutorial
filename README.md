@@ -30,10 +30,20 @@
 - for user input
 ## SetInterval
 - for running the code for a specific time
+## setTimeout
+- code will run after the time up
 ## DOM Elements 
 -getelementsbyName
 -getelementsbytagName
 ## Date or Digital clock project
 - List of date methods
-
+## clearInterval
+- to clear the interval after occur
+## clearTimeout
+- to clear the timeout before occur
+## Window objects 
+## History objects
+- window.history.forward()
+- window.history.back()
+- window.history.go()
  
