@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+
+    </h1>
+    <button onclick="start()">
+start
+</button>
+    <button onclick="stop()">
+stop</button>
+    <button onclick="start1()">start </button>
+    <button onclick="stop1()"> stop</button>
+    <button onclick="fun()">get</button>
+    <!-- window history objects  -->
+    <button onclick="window.history.forward()">forward</button>
+    <button onclick="window.history.back()"> back</button>
+    <button onclick="window.history.go(-1)"> go</button>
+    <script>
+        // first we will define a global variable for the function
+        var my
+
+        function start() {
+
+            my = setTimeout(function() {
+                alert("hello")
+                console.log("hello")
+            }, 2000)
+        }
+
+        function stop() {
+            clearTimeout(my) // for clear the timeout before accur
+            console.log("hey")
+        }
+
+        // clear interval after accur
+        var c = 0
+        var m
+
+        function start1() {
+            m = setInterval(() => {
+                document.getElementsByTagName('h1')[0].innerHTML = c
+                c++
+            }, 1000);
+        }
+
+        function stop1() {
+            clearInterval(m) // for clear the interval
+        }
+
+        function fun() {
+            window.location.href = ("url", "height=500px", "width=500px")
+        }
+    </script>
+</body>
+
+</html>
