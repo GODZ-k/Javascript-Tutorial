@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yellow {
+            height: 400px;
+            margin-top: 10px;
+            width: 400px;
+            position: relative;
+            background-color: yellow;
+        }
+
+        .red {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="start()">
+    start</button>
+    <button onclick="back()">back</button>
+
+    <div class="yellow">
+        <div class="red"></div>
+    </div>
+    <script>
+        function start() {
+            var a = document.getElementsByClassName('red')[0]
+            poe = 0
+
+            var anim = setInterval(animate, 5)
+
+            function animate() {
+                if (poe == 350) {
+                    clearInterval(anim)
+                } else {
+                    poe++
+                    a.style.top = poe + "px"
+                    a.style.left = poe + "px"
+
+
+                }
+            }
+
+        }
+
+        function back() {
+            var a = document.getElementsByClassName('red')[0]
+
+            pav = 350
+            var anm = setInterval(anima, 5)
+
+            function anima() {
+                if (pav == 0) {
+                    clearInterval(anm)
+                }
+                pav--
+                a.style.top = pav + "px"
+                a.style.left = pav + "px"
+            }
+        }
+    </script>
+</body>
+
+</html>

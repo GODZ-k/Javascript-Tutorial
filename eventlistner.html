@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+
+    </h1>
+    <button id="start">start</button>
+    <button onclick="stop()">stop</button>
+    <script>
+        // add event listner
+        // var a = document.getElementById('start')
+        // var b = document.getElementById('stop')
+        // a.addEventListener('click', function() {
+        //     i = 0
+        //     setInterval(function() {
+        //         document.getElementsByTagName('h1')[0].innerHTML = i
+        //         i++
+        //     }, 1000)
+        // })
+
+        // method 2 for add event listner
+        var a = document.getElementById('start')
+
+        a.addEventListener("click", timing)
+
+        function timing() {
+            var i = 0
+
+            setInterval(function() {
+                document.getElementsByTagName('h1')[0].innerHTML = i
+                i++
+            }, 1000)
+        }
+        // remove this event listner
+        function stop() {
+
+            var a = document.getElementById('start')
+            a.removeEventListener("click", timing);
+        }
+    </script>
+</body>
+
+</html>

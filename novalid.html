@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeyup="val(this)">
+    <h1>
+
+    </h1>
+    <button onclick="get()">get</button>
+
+    <script>
+        document.getElementsByTagName('h1')[0].style.color = "red"
+
+        function val(elem) {
+            if (isNaN(elem.value)) {
+                document.getElementsByTagName('h1')[0].innerHTML = "please enter only number"
+
+            } else {
+                document.getElementsByTagName('h1')[0].innerHTML = ""
+                if (elem.value.length > 10) {
+                    document.getElementsByTagName('h1')[0].innerHTML = "number must  not be greater then 10"
+                } else {
+                    document.getElementsByTagName('h1')[0].innerHTML = ""
+                }
+            }
+        }
+
+
+
+
+
+
+        // this method
+
+        var a = {
+            firstname: 'tanmat',
+            lastname: 'khatri',
+            fulname: function() {
+                return this.firstname + this.lastname
+            }
+        }
+
+        function get() {
+            alert(a.fulname())
+        }
+    </script>
+</body>
+
+</html>

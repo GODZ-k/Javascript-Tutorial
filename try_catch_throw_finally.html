@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="get()">get</button>
+    <input type="text" id="num">
+    <h1>
+
+    </h1>
+    <script>
+        // try catch method
+        // function get() {
+        //     try {
+        //         // var num = 7
+
+        //         // alert(num.toUpperCase())
+        //         var str = "welcome to the world "
+        //         alert(str.toUpperCase())
+        //     } catch {
+        //         document.getElementsByTagName('h1')[0].innerHTML = "number to uppercase is not define "
+        //     }
+        // }
+
+
+        // try catch throw finally method
+
+
+
+        var num = document.getElementById('num')
+
+        function get() {
+            var a = num.value
+            try {
+
+                if (isNaN(a)) {
+                    throw "please enter numbers onl"
+                } else {
+
+                    if (a < 5 || a > 10) {
+                        throw "no is out of range"
+                    } else {
+                        throw ""
+                    }
+                }
+            } catch (err) {
+                document.getElementsByTagName('h1')[0].innerHTML = err
+            } finally {
+                num.value = ""
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
