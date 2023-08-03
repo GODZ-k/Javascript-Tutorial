@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(128, 201, 224);
+            align-items: center;
+        }
+
+        .form {
+            background-color: rgb(191, 181, 181);
+            height: 90%;
+            width: 50%;
+        }
+
+        .form form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .form form input {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .form form input[type=submit] {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        #error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <input type="email" placeholder="Enter your Email" required onkeyup="white(this.value)">
+                <input type="password" placeholder="password" id="password" required onkeyup="white(this.value)">
+                <input type="password" placeholder="Confirm password" id="Confirm_password" required onkeyup="white(this.value)">
+                <error id="error"></error>
+                <input type="submit" onclick="return verify()" value="Submit">
+
+
+            </form>
+        </div>
+
+    </div>
+    <script>
+        var patten = /\s/g
+        var alt = document.getElementById("error")
+        var flag = 1
+
+        function white(data) {
+            var isspace = patten.test(data)
+            if (isspace == true) {
+                alt.innerHTML = "Space is not allowed"
+                flag = 0
+            } else {
+                alt.innerHTML = ""
+                flag = 1
+            }
+        }
+
+        function verify() {
+            if (flag == 1) {
+                return true
+            } else {
+                return false
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

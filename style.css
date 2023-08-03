@@ -1,0 +1,124 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.section-p1 {
+    padding: 20px 30px;
+}
+
+.section-m1 {
+    margin: 20px 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(77, 146, 169), rgba(193, 118, 200, 0.838));
+    /* background-color: red; */
+}
+
+#box {
+    height: 95%;
+    width: 50em;
+    background-color: white;
+}
+
+#reg {
+    position: relative;
+}
+
+#registration h1 {
+    color: rgba(32, 29, 29, 0.858);
+}
+
+#registration h1::after {
+    content: "";
+    /* top: 4px; */
+    bottom: -10px;
+    left: 0px;
+    height: 3px;
+    border-radius: 30px;
+    width: 6%;
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(77, 146, 169), rgba(193, 118, 200, 0.838));
+}
+
+.label {
+    display: block;
+    padding: 20px 0 10px 0;
+    font-weight: 700;
+}
+
+.input {
+    padding: 10px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* padding: 0 10px; */
+}
+
+#form {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+#first {
+    width: 50%;
+}
+
+#second {
+    width: 50%;
+    padding-left: 30px;
+}
+
+#gender>label {
+    display: block;
+    font-weight: 700;
+}
+
+#gen_value {
+    padding-top: 10px;
+    display: flex;
+}
+
+#gen_value label {
+    padding: 0 100px 0 4px;
+}
+
+#submit {
+    padding-top: 30px;
+}
+
+#submit input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-image: linear-gradient(to right, rgb(77, 146, 169), rgba(193, 118, 200, 0.838));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#confirm_error {
+    padding-top: 8px;
+    color: red;
+    font-size: 12px;
+}
+
+#error {
+    text-align: center;
+    font-size: 13px;
+    color: red;
+}
+
+.strength {
+    color: grey;
+    font-size: 13px;
+}

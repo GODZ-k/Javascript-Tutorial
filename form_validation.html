@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="box" class="section-m1">
+            <div id="registration" class="section-m1">
+                <div id="reg">
+                    <h1>Registration</h1>
+                </div>
+
+                <p id="error">capslock is on</p>
+
+                <div id="registration_form">
+                    <form action="#" onsubmit="return validate()">
+                        <div id="form">
+                            <div id="first">
+                                <label for="text" class="label">Full Name</label>
+                                <input type="text" name="full name" placeholder="Enter your name" class="input">
+                                <label for="text" class="label">Email</label>
+                                <input type="email" name="Email" placeholder="Enter your email" class="input">
+                                <label for="text" class="label">Password</label>
+                                <input type="password" name="password" class="input" placeholder="Enter your password" autocomplete="off">
+                                <div class="strength">
+                                    <label for="" class="password_check">8 character</label><br>
+                                    <label for="" class="password_check">1 lower case character</label><br>
+                                    <label for="" class="password_check">1 upper case character</label><br>
+                                    <label for="" class="password_check">1 numerical character</label><br>
+                                    <label for="" class="password_check">1 special character</label><br>
+                                </div>
+                            </div>
+
+                            <div id="second">
+                                <label for="text" class="label">Username</label >
+                                <input type="text" name="Username" placeholder="Enter your password"class="input">
+                                <label for="text"class="label">Phone Number</label>
+                                <input type="number" name="Phone" placeholder="Enter your password" size="10" class="input">
+                                <label for="text" class="label">Confirm Password</label>
+                                <input type="password" name="password" autocomplete="off" placeholder="Confirm your password" class="input">
+                                <p id="confirm_error">confirm password does not match</p>
+                            </div>
+                        </div>
+                        <div id="gender">
+                            <label for="text">Gender</label>
+                            <div id="gen_value">
+                                <input type="radio" value="male" name="gender"><label for="">Male</label>
+                                <input type="radio" value="female" name="gender"><label for="">Female</label>
+                                <input type="radio" value="custom" name="gender"><label for="">Prefer not to say</label>
+                            </div>
+                        </div>
+                        <div id="submit">
+                            <input type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/script.js "></script>
+</body>
+
+</html>
